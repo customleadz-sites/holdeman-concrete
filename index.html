@@ -34,6 +34,29 @@
   }
   .hero-tight .hero-stats .stat b { font-size: 1.55rem; }
   .hero-tight .hero-media .frame { aspect-ratio: 4 / 3.4; }
+
+  /* What We Do — title with two clickable thumbnails beside it */
+  .wwd-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: clamp(1.5rem, 4vw, 3rem);
+    flex-wrap: wrap;
+    max-width: none;
+  }
+  .wwd-copy { max-width: 62ch; }
+  .wwd-thumbs { display: flex; gap: 12px; flex-shrink: 0; }
+  .wwd-thumbs a {
+    display: block;
+    width: clamp(110px, 14vw, 170px);
+    aspect-ratio: 4 / 3;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    transition: transform .2s ease;
+  }
+  .wwd-thumbs a:hover { transform: translateY(-3px); }
+  .wwd-thumbs img { width: 100%; height: 100%; object-fit: cover; display: block; }
 </style>
 </head>
 <body>
@@ -80,26 +103,19 @@
   </div>
 </section>
 
-<!-- ============ SECTION INDEX MENU ============ -->
-<nav class="section-index" aria-label="Page sections">
-  <div class="wrap">
-    <span class="label">On this page</span>
-    <a href="#services"><span class="n">01</span> Services</a>
-    <a href="#why"><span class="n">02</span> Why Us</a>
-    <a href="#work"><span class="n">03</span> Our Work</a>
-    <a href="#reviews"><span class="n">04</span> Reviews</a>
-    <a href="#area"><span class="n">05</span> Service Area</a>
-    <a href="#quote"><span class="n">06</span> Free Quote</a>
-  </div>
-</nav>
-
 <!-- ============ SERVICES ============ -->
 <section class="section" id="services">
   <div class="wrap">
-    <div class="section-head reveal">
-      <p class="eyebrow">01 — What We Do</p>
-      <h2 class="h-lg">Full-service residential<br>&amp; commercial concrete.</h2>
-      <p class="lead">One crew, one point of contact, and a finish you can be proud of. Here's what we pour.</p>
+    <div class="section-head wwd-head reveal">
+      <div class="wwd-copy">
+        <p class="eyebrow">01 — What We Do</p>
+        <h2 class="h-lg">Full-service<br>residential concrete.</h2>
+        <p class="lead">One crew, one point of contact, and a finish you can be proud of. Here's what we pour.</p>
+      </div>
+      <div class="wwd-thumbs">
+        <a href="#work" aria-label="See our concrete driveways and flatwork"><img src="images/wwd-driveway.jpeg" alt="Finished concrete driveway through a yard"></a>
+        <a href="#work" aria-label="See our concrete pads and slabs"><img src="images/wwd-pad.jpeg" alt="Finished concrete pad in an open field"></a>
+      </div>
     </div>
     <div class="services-grid reveal d1">
       <article class="service">
