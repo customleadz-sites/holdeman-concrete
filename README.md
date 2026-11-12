@@ -32,6 +32,9 @@ on 2026-11-11 (before that it was a hand-set alias stuck on the July deployment)
   (34 towns in the 8 counties). Unknown ID = stays "the River Valley". Test link: `/?city=Conway`.
 - Sitelinks arrive as `/#services?loc=123`; the script reads that too and scrolls to the section.
 
+## Driveways page (built 2026-11-11 — LOCAL ONLY, not pushed)
+`driveways.html` is cloned from the patios page. Kennedy reviews it locally first. Photos picked by Kennedy 2026-11-11 (`images/dw-*.webp`): hero + 2 gallery shots are Clearwater Concrete jobs, the side-section photo is a Krete Works job, 4 gallery shots are Holdeman's own. The numbered picker set is in `images/_picker/` (gitignored, MANIFEST.txt maps numbers to source files). The Driveways ad group stays paused until this page is live and its ad copy is approved.
+
 ## Images
 Pages load `.webp` copies (max 1200px wide). The original `.jpeg` files stay in `images/` — do not delete them
 (old cached pages still ask for them).
