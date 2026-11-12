@@ -24,7 +24,7 @@ on 2026-11-11 (before that it was a hand-set alias stuck on the July deployment)
 - Web3Forms, key in the three forms; leads go to holdemanconcrete72802@gmail.com (set on the Web3Forms side).
 - `js/main.js` sends the form in the background, then goes to `/thank-you`.
 - `thank-you.html` fires the Google Ads conversion "Quote form (Web3Forms)" (AW-16885165346/QrGdCKC6yO4cEKLavPM-).
-- Live browser test submit: still to confirm.
+- Live browser test submit done 2026-11-11 (Web3Forms accepted, /thank-you reached, conversion fired). Inbox arrival not verified.
 
 ## Town in the headline (2026-11-11)
 - The H1 on all three pages has `<span data-city>the River Valley</span>`.
