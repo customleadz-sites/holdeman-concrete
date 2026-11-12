@@ -28,6 +28,7 @@ addEventListener('pageshow',function(){if(!location.hash)window.scrollTo(0,0);})
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="images/shop-hero-slab.webp" fetchpriority="high">
 <link rel="stylesheet" href="css/styles.css">
 <style>
   /* Shop Pads page — compact hero so it fits above the fold */
@@ -61,7 +62,7 @@ addEventListener('pageshow',function(){if(!location.hash)window.scrollTo(0,0);})
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="index.html">
-      <img src="images/logo.png" alt="Holdeman Concrete logo">
+      <img src="images/logo-sm.webp" alt="Holdeman Concrete logo" width="240" height="180">
       <span class="brand-txt"><b>Holdeman Concrete</b><span>From your vision to concrete realities</span></span>
     </a>
     <div class="header-cta">
@@ -78,7 +79,7 @@ addEventListener('pageshow',function(){if(!location.hash)window.scrollTo(0,0);})
   <div class="wrap hero-inner">
     <div class="hero-copy">
       <p class="eyebrow reveal">Shop Pads · Slabs · Equipment Pads</p>
-      <h1 class="h-xl reveal d1">Shop pads &amp; slabs,<br>engineered for<br><span class="accent">weight distribution</span>.</h1>
+      <h1 class="h-xl reveal d1">Shop pads &amp; slabs<br>in <span class="accent" data-city>the River Valley</span>.</h1>
       <p class="lead reveal d2">From a backyard shed pad to a full shop floor, Holdeman Concrete builds heavy-duty slabs that are properly prepped, reinforced and finished dead-level — the foundation your building and equipment deserve.</p>
       <div class="hero-actions reveal d3">
         <a class="btn btn-primary btn-lg" href="#quote">Get a Free Quote</a>
@@ -97,7 +98,7 @@ addEventListener('pageshow',function(){if(!location.hash)window.scrollTo(0,0);})
       <div class="frame">
         <span class="corner-tick tl"></span>
         <span class="corner-tick br"></span>
-        <img src="images/shop-hero-slab.jpeg" alt="Finished concrete shop pad in an open field with a barn behind">
+        <img fetchpriority="high" src="images/shop-hero-slab.webp" alt="Finished concrete shop pad in an open field with a barn behind">
       </div>
       <span class="hero-tag">Shop pad · Pope County, AR</span>
     </div>
@@ -108,7 +109,7 @@ addEventListener('pageshow',function(){if(!location.hash)window.scrollTo(0,0);})
 <section class="section">
   <div class="wrap split">
     <div class="split-media reveal">
-      <img src="images/shop-pad-footer-split.jpeg" alt="Rebar and vapor barrier prep above a formed, footed slab edge">
+      <img loading="lazy" decoding="async" src="images/shop-pad-footer-split.webp" alt="Rebar and vapor barrier prep above a formed, footed slab edge">
     </div>
     <div class="reveal d1">
       <p class="eyebrow">The Difference Is Underneath</p>
@@ -150,13 +151,13 @@ addEventListener('pageshow',function(){if(!location.hash)window.scrollTo(0,0);})
       <h2 class="h-lg">Built to last.</h2>
     </div>
     <div class="gallery reveal d1">
-      <figure class="g-wide"><img src="images/shop-floor-dusk.jpeg" alt="Freshly power-troweled shop floor at dusk"><figcaption>Shop floor pour</figcaption></figure>
-      <figure class="g-sq"><img src="images/shop-pad-field.jpeg" alt="Large concrete shop pad in an open field"><figcaption>Shed pad</figcaption></figure>
-      <figure class="g-sq"><img src="images/slab-rebar-prep.jpeg" alt="Rebar grid and vapor barrier laid out before a slab pour"><figcaption>Rebar &amp; prep</figcaption></figure>
-      <figure class="g-sq"><img src="images/wet-finished-slab.jpeg" alt="Wet finished concrete slab with gravel edge"><figcaption>Fresh finish</figcaption></figure>
-      <figure class="g-sq"><img src="images/finished-pad-truck.jpeg" alt="Finished concrete pad with a work truck"><figcaption>Finished pad</figcaption></figure>
-      <figure class="g-half"><img src="images/large-slab-cured.jpeg" alt="Large cured slab beside a home"><figcaption>Building slab</figcaption></figure>
-      <figure class="g-half"><img src="images/foundation-vaporbarrier.jpeg" alt="Foundation with vapor barrier and forms staked out"><figcaption>Foundation prep</figcaption></figure>
+      <figure class="g-wide"><img loading="lazy" decoding="async" src="images/shop-floor-dusk.webp" alt="Freshly power-troweled shop floor at dusk"><figcaption>Shop floor pour</figcaption></figure>
+      <figure class="g-sq"><img loading="lazy" decoding="async" src="images/shop-pad-field.webp" alt="Large concrete shop pad in an open field"><figcaption>Shed pad</figcaption></figure>
+      <figure class="g-sq"><img loading="lazy" decoding="async" src="images/slab-rebar-prep.webp" alt="Rebar grid and vapor barrier laid out before a slab pour"><figcaption>Rebar &amp; prep</figcaption></figure>
+      <figure class="g-sq"><img loading="lazy" decoding="async" src="images/wet-finished-slab.webp" alt="Wet finished concrete slab with gravel edge"><figcaption>Fresh finish</figcaption></figure>
+      <figure class="g-sq"><img loading="lazy" decoding="async" src="images/finished-pad-truck.webp" alt="Finished concrete pad with a work truck"><figcaption>Finished pad</figcaption></figure>
+      <figure class="g-half"><img loading="lazy" decoding="async" src="images/large-slab-cured.webp" alt="Large cured slab beside a home"><figcaption>Building slab</figcaption></figure>
+      <figure class="g-half"><img loading="lazy" decoding="async" src="images/foundation-vaporbarrier.webp" alt="Foundation with vapor barrier and forms staked out"><figcaption>Foundation prep</figcaption></figure>
     </div>
   </div>
 </section>
@@ -194,11 +195,17 @@ addEventListener('pageshow',function(){if(!location.hash)window.scrollTo(0,0);})
         </div>
       </div>
     </div>
-    <form class="quote-form reveal d1" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <form class="quote-form reveal d1" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="3a586ef7-0542-4174-b5fc-cb3322b04806">
+      <input type="hidden" name="subject" value="New quote request — Holdeman Concrete (Shop Pads & Slabs)">
+      <input type="hidden" name="from_name" value="Holdeman Concrete Landing Page">
+      <input type="hidden" name="redirect" value="https://holdeman-concrete.vercel.app/thank-you">
+      <input type="hidden" name="ad_location" value="">
+      <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none">
       <input type="hidden" name="page" value="Shop Pads &amp; Slabs">
       <div class="frow">
-        <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Your name" required></div>
-        <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" placeholder="(479) 000-0000" required></div>
+        <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Your name" required autocomplete="name"></div>
+        <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" placeholder="(479) 000-0000" required autocomplete="tel"></div>
       </div>
       <div class="field"><label for="service">Pad Type</label>
         <select id="service" name="service">
@@ -209,6 +216,7 @@ addEventListener('pageshow',function(){if(!location.hash)window.scrollTo(0,0);})
       <div class="field"><label for="details">Size &amp; Details</label><textarea id="details" name="details" rows="4" placeholder="Approx. dimensions, location, and what it's for…"></textarea></div>
       <button type="submit" class="btn btn-primary">Request My Free Quote</button>
       <p class="form-note">No obligation · We typically respond same day</p>
+      <p class="form-error" role="alert" hidden style="margin:.8rem 0 0;text-align:center;color:#ffd9c9;font-size:.9rem">That didn't send. Please call <a href="tel:+14792197575" style="text-decoration:underline">(479) 219-7575</a>.</p>
     </form>
   </div>
 </section>

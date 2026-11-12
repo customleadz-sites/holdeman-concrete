@@ -28,6 +28,7 @@ addEventListener('pageshow',function(){if(!location.hash)window.scrollTo(0,0);})
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="images/patio-approach-hero.webp" fetchpriority="high">
 <link rel="stylesheet" href="css/styles.css">
 <style>
   /* Compact hero so it fits above the fold */
@@ -61,7 +62,7 @@ addEventListener('pageshow',function(){if(!location.hash)window.scrollTo(0,0);})
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="index.html">
-      <img src="images/logo.png" alt="Holdeman Concrete logo">
+      <img src="images/logo-sm.webp" alt="Holdeman Concrete logo" width="240" height="180">
       <span class="brand-txt"><b>Holdeman Concrete</b><span>From your vision to concrete realities</span></span>
     </a>
     <div class="header-cta">
@@ -78,7 +79,7 @@ addEventListener('pageshow',function(){if(!location.hash)window.scrollTo(0,0);})
   <div class="wrap hero-inner">
     <div class="hero-copy">
       <p class="eyebrow reveal">Concrete Patios &amp; Approaches</p>
-      <h1 class="h-xl reveal d1">Patios &amp;<br><span class="accent">approaches</span>,<br>poured to last.</h1>
+      <h1 class="h-xl reveal d1">Concrete patios<br>in <span class="accent" data-city>the River Valley</span>,<br>poured to last.</h1>
       <p class="lead reveal d2">From a backyard patio to a smooth driveway approach, Holdeman Concrete pours level, lasting flatwork — sized, shaped and finished to fit your home and hold up for years.</p>
       <div class="hero-actions reveal d3">
         <a class="btn btn-primary btn-lg" href="#quote">Get a Free Quote</a>
@@ -97,7 +98,7 @@ addEventListener('pageshow',function(){if(!location.hash)window.scrollTo(0,0);})
       <div class="frame">
         <span class="corner-tick tl"></span>
         <span class="corner-tick br"></span>
-        <img src="images/patio-approach-hero.jpeg" alt="Fresh concrete driveway approach at a wooded Arkansas home">
+        <img fetchpriority="high" src="images/patio-approach-hero.webp" alt="Fresh concrete driveway approach at a wooded Arkansas home">
       </div>
       <span class="hero-tag">Driveway approach · Pope County</span>
     </div>
@@ -108,7 +109,7 @@ addEventListener('pageshow',function(){if(!location.hash)window.scrollTo(0,0);})
 <section class="section">
   <div class="wrap split reverse">
     <div class="split-media reveal">
-      <img src="images/patio-approach-feature.jpeg" alt="Curved broom-finished concrete patio wrapping the back of a home">
+      <img loading="lazy" decoding="async" src="images/patio-approach-feature.webp" alt="Curved broom-finished concrete patio wrapping the back of a home">
     </div>
     <div class="reveal d1">
       <p class="eyebrow">Why Concrete</p>
@@ -167,15 +168,15 @@ addEventListener('pageshow',function(){if(!location.hash)window.scrollTo(0,0);})
       <h2 class="h-lg">Clean, level, lasting.</h2>
     </div>
     <div class="gallery reveal d1">
-      <figure class="g-wide"><img src="images/pa-driveway-brick.jpeg" alt="Finished concrete driveway approach at a brick home"><figcaption>Driveway &amp; approach</figcaption></figure>
-      <figure class="g-sq"><img src="images/pa-backyard-patio.jpeg" alt="Concrete backyard patio inside a fenced yard"><figcaption>Backyard patio</figcaption></figure>
-      <figure class="g-sq"><img src="images/pa-covered-patio.jpeg" alt="Covered concrete patio slab under a framed porch"><figcaption>Covered patio</figcaption></figure>
-      <figure class="g-sq"><img src="images/pa-wraparound.jpeg" alt="Wrap-around concrete approach across the front of a home"><figcaption>Wrap-around approach</figcaption></figure>
-      <figure class="g-sq"><img src="images/pa-side-approach.jpeg" alt="Concrete side approach and walkway beside a home"><figcaption>Side approach</figcaption></figure>
-      <figure class="g-half"><img src="images/pa-driveway.jpeg" alt="Level concrete driveway slab"><figcaption>Driveway pour</figcaption></figure>
-      <figure class="g-half"><img src="images/pa-commercial-approach.jpeg" alt="Concrete approach at a commercial building"><figcaption>Commercial approach</figcaption></figure>
-      <figure class="g-half"><img src="images/pa-finished-pad.jpeg" alt="Finished concrete pad in an open yard"><figcaption>Finished pad</figcaption></figure>
-      <figure class="g-half"><img src="images/pa-garage-approach.jpeg" alt="Concrete garage floor and approach pour"><figcaption>Garage approach</figcaption></figure>
+      <figure class="g-wide"><img loading="lazy" decoding="async" src="images/pa-driveway-brick.webp" alt="Finished concrete driveway approach at a brick home"><figcaption>Driveway &amp; approach</figcaption></figure>
+      <figure class="g-sq"><img loading="lazy" decoding="async" src="images/pa-backyard-patio.webp" alt="Concrete backyard patio inside a fenced yard"><figcaption>Backyard patio</figcaption></figure>
+      <figure class="g-sq"><img loading="lazy" decoding="async" src="images/pa-covered-patio.webp" alt="Covered concrete patio slab under a framed porch"><figcaption>Covered patio</figcaption></figure>
+      <figure class="g-sq"><img loading="lazy" decoding="async" src="images/pa-wraparound.webp" alt="Wrap-around concrete approach across the front of a home"><figcaption>Wrap-around approach</figcaption></figure>
+      <figure class="g-sq"><img loading="lazy" decoding="async" src="images/pa-side-approach.webp" alt="Concrete side approach and walkway beside a home"><figcaption>Side approach</figcaption></figure>
+      <figure class="g-half"><img loading="lazy" decoding="async" src="images/pa-driveway.webp" alt="Level concrete driveway slab"><figcaption>Driveway pour</figcaption></figure>
+      <figure class="g-half"><img loading="lazy" decoding="async" src="images/pa-commercial-approach.webp" alt="Concrete approach at a commercial building"><figcaption>Commercial approach</figcaption></figure>
+      <figure class="g-half"><img loading="lazy" decoding="async" src="images/pa-finished-pad.webp" alt="Finished concrete pad in an open yard"><figcaption>Finished pad</figcaption></figure>
+      <figure class="g-half"><img loading="lazy" decoding="async" src="images/pa-garage-approach.webp" alt="Concrete garage floor and approach pour"><figcaption>Garage approach</figcaption></figure>
     </div>
   </div>
 </section>
@@ -213,11 +214,17 @@ addEventListener('pageshow',function(){if(!location.hash)window.scrollTo(0,0);})
         </div>
       </div>
     </div>
-    <form class="quote-form reveal d1" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <form class="quote-form reveal d1" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="3a586ef7-0542-4174-b5fc-cb3322b04806">
+      <input type="hidden" name="subject" value="New quote request — Holdeman Concrete (Patios & Approaches)">
+      <input type="hidden" name="from_name" value="Holdeman Concrete Landing Page">
+      <input type="hidden" name="redirect" value="https://holdeman-concrete.vercel.app/thank-you">
+      <input type="hidden" name="ad_location" value="">
+      <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none">
       <input type="hidden" name="page" value="Patios &amp; Approaches">
       <div class="frow">
-        <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Your name" required></div>
-        <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" placeholder="(479) 000-0000" required></div>
+        <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Your name" required autocomplete="name"></div>
+        <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" placeholder="(479) 000-0000" required autocomplete="tel"></div>
       </div>
       <div class="field"><label for="finish">Finish You Like</label>
         <select id="finish" name="finish">
@@ -228,6 +235,7 @@ addEventListener('pageshow',function(){if(!location.hash)window.scrollTo(0,0);})
       <div class="field"><label for="details">Project Details</label><textarea id="details" name="details" rows="4" placeholder="Rough size, location, and what you have in mind…"></textarea></div>
       <button type="submit" class="btn btn-primary">Request My Free Quote</button>
       <p class="form-note">No obligation · We typically respond same day</p>
+      <p class="form-error" role="alert" hidden style="margin:.8rem 0 0;text-align:center;color:#ffd9c9;font-size:.9rem">That didn't send. Please call <a href="tel:+14792197575" style="text-decoration:underline">(479) 219-7575</a>.</p>
     </form>
   </div>
 </section>

@@ -28,6 +28,7 @@ addEventListener('pageshow',function(){if(!location.hash)window.scrollTo(0,0);})
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="images/index-hero.webp" fetchpriority="high">
 <link rel="stylesheet" href="css/styles.css">
 <style>
   /* Compact hero so it fits above the fold */
@@ -133,7 +134,7 @@ addEventListener('pageshow',function(){if(!location.hash)window.scrollTo(0,0);})
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="index.html">
-      <img src="images/logo.png" alt="Holdeman Concrete logo">
+      <img src="images/logo-sm.webp" alt="Holdeman Concrete logo" width="240" height="180">
       <span class="brand-txt"><b>Holdeman Concrete</b><span>From your vision to concrete realities</span></span>
     </a>
     <div class="header-cta">
@@ -150,8 +151,8 @@ addEventListener('pageshow',function(){if(!location.hash)window.scrollTo(0,0);})
   <div class="wrap hero-inner">
     <div class="hero-copy">
       <p class="eyebrow reveal">Dardanelle, Arkansas · Owner-Operated</p>
-      <h1 class="h-xl reveal d1">Holdeman Concrete,<br>serving <span class="accent">Little Rock<br>to Fort Smith</span>.</h1>
-      <p class="lead reveal d2">Holdeman Concrete pours durable, clean-finished flatwork for homeowners and businesses from Little Rock to Fort Smith — driveways, slabs, patios, sidewalks and foundations, backed by the owner on every job.</p>
+      <h1 class="h-xl reveal d1">Concrete contractor<br>serving <span class="accent" data-city>the River Valley</span>.</h1>
+      <p class="lead reveal d2">Holdeman Concrete pours durable, clean-finished flatwork for homeowners and businesses across the Arkansas River Valley — driveways, slabs, patios, sidewalks and foundations, backed by the owner on every job.</p>
       <div class="hero-actions reveal d3">
         <a class="btn btn-primary btn-lg" href="#quote">Get a Free Quote</a>
         <a class="btn btn-ghost btn-lg" href="tel:+14792197575" onclick="gtag('event', 'conversion', {'send_to': 'AW-16885165346/YwOhCPOQx8wcEKLavPM-'});">
@@ -164,7 +165,7 @@ addEventListener('pageshow',function(){if(!location.hash)window.scrollTo(0,0);})
       <div class="frame">
         <span class="corner-tick tl"></span>
         <span class="corner-tick br"></span>
-        <img src="images/index-hero.jpeg" alt="Freshly poured concrete driveway approach at a wooded Arkansas home">
+        <img fetchpriority="high" src="images/index-hero.webp" alt="Freshly poured concrete driveway approach at a wooded Arkansas home">
       </div>
       <span class="hero-tag">Recent pour · Arkansas River Valley</span>
     </div>
@@ -181,8 +182,8 @@ addEventListener('pageshow',function(){if(!location.hash)window.scrollTo(0,0);})
         <p class="lead">One crew, one point of contact, and a finish you can be proud of. Here's what we pour.</p>
       </div>
       <div class="wwd-thumbs">
-        <button type="button" class="wwd-thumb" aria-label="Expand image of a finished concrete driveway"><img src="images/wwd-driveway.jpeg" alt="Finished concrete driveway through a yard"></button>
-        <button type="button" class="wwd-thumb" aria-label="Expand image of a finished concrete pad"><img src="images/wwd-pad.jpeg" alt="Finished concrete pad in an open field"></button>
+        <button type="button" class="wwd-thumb" aria-label="Expand image of a finished concrete driveway"><img loading="lazy" decoding="async" src="images/wwd-driveway.webp" alt="Finished concrete driveway through a yard"></button>
+        <button type="button" class="wwd-thumb" aria-label="Expand image of a finished concrete pad"><img loading="lazy" decoding="async" src="images/wwd-pad.webp" alt="Finished concrete pad in an open field"></button>
       </div>
     </div>
     <div class="services-grid reveal d1">
@@ -252,15 +253,15 @@ addEventListener('pageshow',function(){if(!location.hash)window.scrollTo(0,0);})
       <p class="lead">A look at recent slabs, driveways and flatwork from around the River Valley.</p>
     </div>
     <div class="gallery reveal d1">
-      <figure class="g-tall"><img src="images/wet-finished-slab.jpeg" alt="Freshly finished concrete slab with gravel edge"><figcaption>Slab · fresh finish</figcaption></figure>
-      <figure class="g-wide"><img src="images/residential-driveway-home.jpeg" alt="Concrete driveway wrapping a rural home"><figcaption>Residential driveway</figcaption></figure>
-      <figure class="g-sq"><img src="images/shop-pad-field.jpeg" alt="Large shop pad poured in an open field"><figcaption>Shop pad</figcaption></figure>
-      <figure class="g-sq"><img src="images/sidewalk-pour.jpeg" alt="Concrete sidewalk being poured between two slabs"><figcaption>Sidewalk pour</figcaption></figure>
-      <figure class="g-half"><img src="images/large-slab-cured.jpeg" alt="Large cured concrete slab near a home"><figcaption>Building slab</figcaption></figure>
-      <figure class="g-half"><img src="images/shop-floor-dusk.jpeg" alt="Interior shop floor freshly power-troweled at dusk"><figcaption>Shop floor</figcaption></figure>
-      <figure class="g-sq"><img src="images/driveway-slab-rural.jpeg" alt="Rural concrete driveway slab"><figcaption>Driveway slab</figcaption></figure>
-      <figure class="g-sq"><img src="images/finished-pad-truck.jpeg" alt="Finished concrete pad with work truck"><figcaption>Finished pad</figcaption></figure>
-      <figure class="g-half"><img src="images/patio-flatwork-home.jpeg" alt="Concrete flatwork and patio around a home"><figcaption>Patio &amp; flatwork</figcaption></figure>
+      <figure class="g-tall"><img loading="lazy" decoding="async" src="images/wet-finished-slab.webp" alt="Freshly finished concrete slab with gravel edge"><figcaption>Slab · fresh finish</figcaption></figure>
+      <figure class="g-wide"><img loading="lazy" decoding="async" src="images/residential-driveway-home.webp" alt="Concrete driveway wrapping a rural home"><figcaption>Residential driveway</figcaption></figure>
+      <figure class="g-sq"><img loading="lazy" decoding="async" src="images/shop-pad-field.webp" alt="Large shop pad poured in an open field"><figcaption>Shop pad</figcaption></figure>
+      <figure class="g-sq"><img loading="lazy" decoding="async" src="images/sidewalk-pour.webp" alt="Concrete sidewalk being poured between two slabs"><figcaption>Sidewalk pour</figcaption></figure>
+      <figure class="g-half"><img loading="lazy" decoding="async" src="images/large-slab-cured.webp" alt="Large cured concrete slab near a home"><figcaption>Building slab</figcaption></figure>
+      <figure class="g-half"><img loading="lazy" decoding="async" src="images/shop-floor-dusk.webp" alt="Interior shop floor freshly power-troweled at dusk"><figcaption>Shop floor</figcaption></figure>
+      <figure class="g-sq"><img loading="lazy" decoding="async" src="images/driveway-slab-rural.webp" alt="Rural concrete driveway slab"><figcaption>Driveway slab</figcaption></figure>
+      <figure class="g-sq"><img loading="lazy" decoding="async" src="images/finished-pad-truck.webp" alt="Finished concrete pad with work truck"><figcaption>Finished pad</figcaption></figure>
+      <figure class="g-half"><img loading="lazy" decoding="async" src="images/patio-flatwork-home.webp" alt="Concrete flatwork and patio around a home"><figcaption>Patio &amp; flatwork</figcaption></figure>
     </div>
   </div>
 </section>
@@ -328,10 +329,17 @@ addEventListener('pageshow',function(){if(!location.hash)window.scrollTo(0,0);})
         </div>
       </div>
     </div>
-    <form class="quote-form reveal d1" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <form class="quote-form reveal d1" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="3a586ef7-0542-4174-b5fc-cb3322b04806">
+      <input type="hidden" name="subject" value="New quote request — Holdeman Concrete (Concrete Contractor)">
+      <input type="hidden" name="from_name" value="Holdeman Concrete Landing Page">
+      <input type="hidden" name="redirect" value="https://holdeman-concrete.vercel.app/thank-you">
+      <input type="hidden" name="ad_location" value="">
+      <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none">
+      <input type="hidden" name="page" value="Concrete Contractor">
       <div class="frow">
-        <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Your name" required></div>
-        <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" placeholder="(479) 000-0000" required></div>
+        <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Your name" required autocomplete="name"></div>
+        <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" placeholder="(479) 000-0000" required autocomplete="tel"></div>
       </div>
       <div class="field"><label for="service">Project Type</label>
         <select id="service" name="service">
@@ -342,6 +350,7 @@ addEventListener('pageshow',function(){if(!location.hash)window.scrollTo(0,0);})
       <div class="field"><label for="details">Project Details</label><textarea id="details" name="details" rows="4" placeholder="Rough size, location, and what you have in mind…"></textarea></div>
       <button type="submit" class="btn btn-primary">Request My Free Quote</button>
       <p class="form-note">No obligation · We typically respond same day</p>
+      <p class="form-error" role="alert" hidden style="margin:.8rem 0 0;text-align:center;color:#ffd9c9;font-size:.9rem">That didn't send. Please call <a href="tel:+14792197575" style="text-decoration:underline">(479) 219-7575</a>.</p>
     </form>
   </div>
 </section>

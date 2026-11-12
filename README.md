@@ -14,24 +14,27 @@ Reviews / Service Area / Free Quote) — it only jumps between sections, it does
 **not** link to the other two pages.
 
 ## Preview locally
-From this `site/` folder:
-```
-python3 -m http.server 8080
-```
-Then open http://localhost:8080
+Double-click `Preview Site.command` (gitignored), then open http://localhost:8772
 
-## ⚠️ Before going live — hook up the quote form
-Right now the form has a placeholder. Until it's connected, submitting just shows
-a "Call to book" message instead of pretending to send.
+## Live address
+Ads point at **holdeman-concrete.vercel.app**. It was added as a real domain on the Vercel project `holdeman-concrete`
+on 2026-11-11 (before that it was a hand-set alias stuck on the July deployment). Push to `main` auto-deploys.
 
-1. Make a free account at **https://formspree.io** and create a form.
-2. Copy your form ID (looks like `xyzabcd`).
-3. In all three files (`index.html`, `shop-pads-slabs.html`, `patios.html`),
-   find `YOUR_FORM_ID` and replace it with your real ID, e.g.
-   `action="https://formspree.io/f/xyzabcd"`.
-4. Set the notification email in Formspree to where you want leads to land.
+## Quote form (wired 2026-11-11)
+- Web3Forms, key in the three forms; leads go to holdemanconcrete72802@gmail.com (set on the Web3Forms side).
+- `js/main.js` sends the form in the background, then goes to `/thank-you`.
+- `thank-you.html` fires the Google Ads conversion "Quote form (Web3Forms)" (AW-16885165346/QrGdCKC6yO4cEKLavPM-).
+- Live browser test submit: still to confirm.
 
-That's it — quote requests will then email straight to that inbox.
+## Town in the headline (2026-11-11)
+- The H1 on all three pages has `<span data-city>the River Valley</span>`.
+- The campaign's Final URL suffix is `loc={loc_physical_ms}`; `js/main.js` maps Google's city ID to a town name
+  (34 towns in the 8 counties). Unknown ID = stays "the River Valley". Test link: `/?city=Conway`.
+- Sitelinks arrive as `/#services?loc=123`; the script reads that too and scrolls to the section.
+
+## Images
+Pages load `.webp` copies (max 1200px wide). The original `.jpeg` files stay in `images/` — do not delete them
+(old cached pages still ask for them).
 
 ## Notes
 - Phone `479-219-7575` is a tap-to-call link everywhere (main conversion path).
